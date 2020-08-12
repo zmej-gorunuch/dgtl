@@ -1,1 +1,0 @@
-import '../../assets/video/intro-v-3.mp4'
