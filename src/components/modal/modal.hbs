@@ -1,0 +1,38 @@
+{{!--<a href="#modal-form" class="open-modal"></a>  --}}
+
+<!-- Start modal -->
+<div id="modal-form" class="modal">
+    <div class="modal__window">
+        <div class="modal__cross">
+            &nbsp;
+        </div>
+        <div class="modal__title">
+            <h3 class="title--desh">Получить консультацию</h3>
+        </div>
+        <form action="" class="form">
+            <input type="text" name="name" id="input-name" placeholder="*Ваше ім’я та прізвище" required>
+            <input type="tel" name="tel" id="input-tel" placeholder="Номер телефону">
+            <input type="email" name="email" id="input-email" placeholder="*email" required>
+            <textarea name="massage" id="input-massage" cols="30" rows="5" placeholder="коментар"></textarea>
+
+            {{#if file}}
+            <input type="file" name="file" id="file" class="inputFile" />
+            <label for="file" class="labelFile">
+                <div class="svg">{{> "../../svg/input-file.svg.hbs"}}</div><span> ПРІКРІПИТИ РЕЗЮМЕ</span>
+            </label>
+
+            {{/if}}
+
+            {{#if checkbox}}
+            <div class="filter-checkbox">
+                <input type="checkbox" id="checkbox-1">
+                <label for="checkbox-1"> Я погоджуюся з <span>правилами заповнення заявки</span></label>
+            </div>
+            {{/if}}
+            <div class="btn-wrap">
+                <input class="btn" type="submit" value="НАДІСЛАти">
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End modal -->

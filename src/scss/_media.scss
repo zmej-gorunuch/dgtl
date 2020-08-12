@@ -1,0 +1,56 @@
+// ==========  Desktop First  ==========
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .no-scroll-mobile {
+    overflow: hidden;
+  }
+
+  .hidden-on-tablet {
+    display: none;
+  }
+
+  .page-wrapper {
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+}
+
+// ==========  Mobile First  ==========
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .hidden-on-desktop {
+    display: none;
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+}

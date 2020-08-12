@@ -1,0 +1,153 @@
+//@import "mixins/menu-fade";
+@import 'mixins/menu-translate';
+
+//@import '.mixins/burger-active-default';
+@import 'mixins/burger-active-rotate';
+
+//Start header
+.fixed-header .header {
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  img,
+  svg {
+    height: 57px;
+    width: auto;
+  }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out, opacity 0.5s ease-out;
+  z-index: 3;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  nav > ul {
+    padding: 45px 0 45px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > li {
+      margin-right: 22px;
+      list-style-type: none;
+
+      > a:hover {
+        color: $accent-color;
+      }
+
+      > a,
+      > span {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        padding: 0 0;
+        color: $color-white;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        transition: color 0.3s ease-out;
+      }
+    }
+  }
+}
+
+//Start burger
+.burger {
+  float: right;
+  position: relative;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    transition: transform 0.3s ease-out;
+    width: 20px;
+    border-radius: 5px;
+    background-color: $color-white;
+    margin: 4px 0;
+    position: relative;
+  }
+}
+
+//End header
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .header {
+    padding: 12px 0;
+
+    nav {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      max-width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      transition: all 0.5s ease-out;
+      z-index: 4;
+
+      ul {
+        height: 100%;
+      }
+    }
+  }
+
+  //End burger
+
+  //default header
+  .header {
+    nav {
+      // @include menu-fade();
+      @include menu-translate();
+
+      padding: 20vh 0;
+
+      ul {
+        flex-direction: column;
+        justify-content: space-around;
+
+        li {
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+
+    .logo {
+      z-index: 4;
+    }
+
+    .burger {
+      z-index: 4;
+
+      &.active {
+        // @include burger-active-default();
+        @include burger-active-rotate();
+      }
+    }
+
+    .menu-back {
+      display: none;
+    }
+  }
+}

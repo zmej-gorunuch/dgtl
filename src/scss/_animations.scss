@@ -1,0 +1,12 @@
+//Start animation classes
+.animated {
+	animation-play-state: paused;
+}
+
+.section--was-active {
+	.animated {
+		animation-play-state: running;
+	}
+}
+
+//End animation classes

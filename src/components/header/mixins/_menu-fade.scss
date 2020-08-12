@@ -1,0 +1,32 @@
+//Active state
+
+@mixin menu-fade {
+  //nav
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+
+  ul {
+    li {
+      transform: translate3d(600px, 0, 0);
+    }
+  }
+
+  &.menu-open {
+    opacity: 1;
+    visibility: visible;
+
+    li {
+      transform: translate3d(0, 0, 0); // Slide in from right for LI
+    }
+  }
+
+  // Deleay each nav li for slid by 0.2s
+  @for $i from 1 to 8 {
+    li {
+      &:nth-child(#{$i}) {
+        transition-delay: $i * 0.1s;
+      }
+    }
+  }
+}
