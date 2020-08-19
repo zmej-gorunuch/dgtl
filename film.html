@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img class="logo-general" src="img/logo.svg" alt="logo">
+            <img class="logo-white" src="img/logo-white.svg" alt="logo">
+        </a>
+        <div class="menu-wrapper">
+            <nav class="header__menu">
+                <div class="mobwrap-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">FILM</a></li>
+                        <li><a href="#">COMMERCIAL</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">UA</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" target="_blank">FACEBOOK</a>
+                        <a href="#" target="_blank">VIMEO</a>
+                    </div>
+                </div>
+                <span class="pagename">Film</span>
+                <div class="menu__icon">
+                    <img class="openmenu" src="img/burger.svg" alt="menu">
+                    <img class="closemenu" src="img/close.svg" alt="menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="film-carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/film-slide1.jpg" alt="slide">
+                            <div class="slide__info">
+                                <p class="name">NESTOR GRAY</p>
+                                <p class="theme">THE WALK</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/film-slide2.jpg" alt="slide">
+                            <div class="slide__info">
+                                <p class="name">NESTOR GRAY</p>
+                                <p class="theme">THE LONGWAY WALK</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/film-slide1.jpg" alt="slide">
+                            <div class="slide__info">
+                                <p class="name">NESTOR GRAY</p>
+                                <p class="theme">THE WALK</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/film-slide2.jpg" alt="slide">
+                            <div class="slide__info">
+                                <p class="name">NESTOR GRAY</p>
+                                <p class="theme">THE WALK</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/film-slide1.jpg" alt="slide">
+                            <div class="slide__info">
+                                <p class="name">NESTOR GRAY</p>
+                                <p class="theme">THE WALK</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- dots -->
+                <div class="swiper-pagination"></div>
+                <!-- arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+
+    <!-- Slider initial -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            mousewheel: true,
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 9000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                },
+
+                767: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>
+    <!-- Slider end -->
+</body>
+
+</html>
