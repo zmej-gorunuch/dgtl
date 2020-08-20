@@ -7,6 +7,14 @@
         font-size: 36px;
         line-height: 50px;
     }
+
+   
+
+    .closemodal {
+        right: 15px;
+        top: 15px;
+    }
+    
 }
 
 @media(max-width:767.8px) {
@@ -258,8 +266,13 @@
     }
 
 
-
-
+    .commod__videowrap {
+        max-width: 90%;
+    }
+    .closemodal {
+        right: 10px;
+        top: 10px;
+    }
 
 
 
@@ -326,6 +339,9 @@
         top: 100px;
 
     }
+    .commod__videowrap {
+        max-width: 80%;
+    }
 }
 
 @media(max-height:480px) and (max-width:767.8px) and (orientation: landscape) {
@@ -348,5 +364,8 @@
 
     header .social {
         bottom: 22px;
+    }
+    .commod__videowrap {
+        max-width: 80%;
     }
 }

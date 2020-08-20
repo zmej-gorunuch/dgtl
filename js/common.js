@@ -33,6 +33,16 @@ $(document).ready(function () {
             title: 'Example Title',
         });
     }
+
+    // COmmercial modal
+    $('.closemodal').click(function(){
+        // $('.commerc-modalwrap').hide();
+        $('.commerc-modalwrap').removeClass('show');
+    });
     
+    $('.commercslider .swwrap').click(function() {
+        // $('.commerc-modalwrap').show();
+        $('.commerc-modalwrap').addClass('show');
+    });
 
 });

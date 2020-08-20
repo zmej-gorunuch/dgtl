@@ -43,7 +43,8 @@ ul.inline-list li {
     vertical-align: middle;
 }
 
-.hovundeline, .hovundeline-back {
+.hovundeline,
+.hovundeline-back {
     position: relative;
 }
 
@@ -99,6 +100,7 @@ header {
     z-index: 11;
     position: relative;
 }
+
 header .logo {
     position: absolute;
     z-index: 2;
@@ -528,4 +530,99 @@ header .social {
 /* COMMERCIAL PAGE */
 .swwrap {
     cursor: pointer;
+}
+
+.swiper-slide .slide__info .name {
+    opacity: 0;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.swiper-slide.swiper-slide-active .slide__info .name {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+
+.swiper-slide .slide__info .theme {
+    opacity: 0;
+    transform: translateY(-100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+.swiper-slide.swiper-slide-active .slide__info .theme {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+
+.commerc-modalwrap {
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.commerc-modalwrap.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.commerc-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commod__videowrap {
+    max-width: 80%;
+}
+
+.closemodal {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.closemodal img {
+    width: 20px;
+    height: 20px;
+}
+
+.plyr audio, .plyr iframe, .plyr video {
+    max-height: 100vh;
 }
