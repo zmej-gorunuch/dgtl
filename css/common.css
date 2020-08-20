@@ -623,6 +623,119 @@ header .social {
     height: 20px;
 }
 
-.plyr audio, .plyr iframe, .plyr video {
+.plyr audio,
+.plyr iframe,
+.plyr video {
     max-height: 100vh;
+}
+
+/* ABOUT PAGE */
+
+.about-slider {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-slider .swwrap {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+.about-slider .swwrap img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.about-content {
+    padding: 67px 0 72px 0;
+}
+
+.teambox__pic {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.teambox__pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.teambox__pic img.hoverpic {
+    display: none;
+}
+
+.teambox__pic img.defoultpic {
+    display: block;
+}
+
+.teambox__pic:hover img.hoverpic {
+    display: block;
+}
+
+.teambox__pic:hover img.defoultpic {
+    display: none;
+}
+
+.teambox__descr {
+    padding: 29px 0 0 0;
+    height: 125px;
+}
+
+.teambox__descr .teambox__name,
+.teambox__descr .teambox__prof {
+    margin: 0;
+    font-size: 26px;
+    line-height: 32px;
+    color: #000000;
+}
+
+.teambox {
+    margin-bottom: 40px;
+}
+
+.ourteam {
+    margin-bottom: 30px;
+}
+
+.mapsect img {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.fa-content .mapaddress {
+    max-width: 593px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 53px;
+    line-height: 65px;
+    color: #000000;
+    margin: 0;
+}
+
+.fa-content.abcont {
+    padding-bottom: 135px;
+}
+
+.phonebigmap,
+.phonemap {
+    display: none;
 }

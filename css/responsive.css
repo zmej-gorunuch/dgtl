@@ -8,13 +8,27 @@
         line-height: 50px;
     }
 
-   
-
     .closemodal {
         right: 15px;
         top: 15px;
     }
-    
+
+    .fa-content .mapaddress {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .fa-content.abcont {
+        padding-bottom: 100px;
+    }
+
+    .mapsect img {
+        margin-bottom: 30px;
+    }
+
+    .ourteam {
+        margin-bottom: 0;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -265,15 +279,60 @@
         width: 100%;
     }
 
-
     .commod__videowrap {
         max-width: 90%;
     }
+
     .closemodal {
         right: 10px;
         top: 10px;
     }
 
+    .teambox__pic {
+        height: 205px;
+    }
+
+    .ourteam .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .ourteam .row .col-sm-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .teambox__descr .teambox__name,
+    .teambox__descr .teambox__prof {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .teambox__descr {
+        height: auto;
+    }
+
+    .teambox {
+        margin-bottom: 50px;
+    }
+
+    .deskmap {
+        display: none;
+    }
+
+    .phonebigmap {
+        display: block;
+    }
+
+    .fa-content .mapaddress {
+        font-size: 24px;
+        line-height: 29px;
+        max-width: initial;
+    }
+
+    .fa-content.abcont {
+        padding-bottom: 47px;
+    }
 
 
 
@@ -289,6 +348,7 @@
     .film-carousel .slide__info {
         padding: 0 20px;
     }
+
     footer .container .footer__section:nth-child(2) a {
         font-size: 22px;
         line-height: 27px;
@@ -301,11 +361,30 @@
     .footer__bottsect a:first-child {
         margin-right: 5px;
     }
+
     .footer__bottsect .row .col-6:first-child {
         padding-right: 0;
     }
+
     .footer__bottsect .row .col-6:nth-child(2) {
         padding-left: 0;
+    }
+
+    .teambox__pic {
+        height: 230px;
+    }
+
+    .teambox__descr .teambox__name, .teambox__descr .teambox__prof {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .phonebigmap {
+        display: none;
+    }
+
+    .phonemap {
+        display: block;
     }
 }
 
@@ -339,6 +418,7 @@
         top: 100px;
 
     }
+
     .commod__videowrap {
         max-width: 80%;
     }
@@ -365,6 +445,7 @@
     header .social {
         bottom: 22px;
     }
+
     .commod__videowrap {
         max-width: 80%;
     }
