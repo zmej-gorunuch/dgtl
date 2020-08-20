@@ -193,9 +193,6 @@ header .logo:hover .logo-white {
     -o-transition: .3s;
 }
 
-.header__menu ul li a:hover {
-    opacity: .5;
-}
 
 .menu__icon {
     cursor: pointer;
@@ -738,4 +735,34 @@ header .social {
 .phonebigmap,
 .phonemap {
     display: none;
+}
+.mobwrap-menu ul li a {
+    position: relative;
+}
+
+.mobwrap-menu ul li a text {
+    content: '121212';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: auto;
+    color: #ed2400;
+    transform: translate3d(0,-18px,0);
+    opacity: 0;
+    transition: all cubic-bezier(0.190, 1.000, 0.220, 1.000) .8s;
+}
+
+.mobwrap-menu ul li a:hover text{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+.mobwrap-menu ul li a > span {
+    display: inline-block;
+    vertical-align: top;
+    transition: all cubic-bezier(0.190, 1.000, 0.220, 1.000) .8s;
+}
+
+.mobwrap-menu ul li a:hover > span {
+    transform: translate3d(0,16px,0);
+    opacity: 0;
 }
