@@ -94,11 +94,17 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="video-wrapper">
-                                <video id="" class="js-player" playsinline controls
-                                    data-poster="img/articlepic3.jpg">
+                                <!-- <video id="" class="js-player" playsinline controls data-poster="img/articlepic3.jpg">
                                     <source src="video/video.mp4" type="video/mp4" />
-                                    <!-- <source src="/path/to/video.webm" type="video/webm" /> -->
-                                </video>
+                                    <source src="/path/to/video.webm" type="video/webm" />
+                                </video> -->
+                                <div class="plyr__video-embed" id="player">
+                                    <iframe
+                                        src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+                                        allowfullscreen allowtransparency allow="autoplay" data-poster="img/articlepic3.jpg"></iframe>
+                                </div>
+
+
                             </div>
                         </div>
                         <div class="col-lg-5">

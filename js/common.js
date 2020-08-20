@@ -28,9 +28,11 @@ $(document).ready(function () {
             title: 'Example Title',
         });
     }
+    if($('*').is('.plyr__video-embed')) {
+        const players = Plyr.setup('.plyr__video-embed', {
+            title: 'Example Title',
+        });
+    }
     
 
-    // const player = new Plyr('#player', {
-    //     title: 'Example Title',
-    //   });
 });
