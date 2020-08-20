@@ -766,3 +766,34 @@ header .social {
     transform: translate3d(0,16px,0);
     opacity: 0;
 }
+
+.pagename {
+    min-width: 36px;
+}
+
+/* MAIN PAGE */
+
+.swwrap.mainslide-bg {
+    background: conic-gradient(from 200.81deg at 36.02% 50%, #D56B6B 0deg, #D8D8AA 217.5deg, #D56B6B 360deg);
+}
+
+.film-carousel .swiper-slide .swwrap.mainslide-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.film-carousel .swiper-slide .swwrap.mainslide-bg video {
+    height: 100%;
+    width: auto;
+}
+
+.film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap{
+    height: 100vh;
+    /* width: 100%; */
+}
+
+/* .film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap{
+    height: 100vh;
+    width: 100%;
+} */

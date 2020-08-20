@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/plyr.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img class="logo-general" src="img/logo.svg" alt="logo">
+            <img class="logo-white" src="img/logo-white.svg" alt="logo">
+        </a>
+        <div class="menu-wrapper">
+            <nav class="header__menu">
+                <div class="mobwrap-menu">
+                    <ul>
+                        <li><a href="#"><span>Home</span> <text>Home</text></a></li>
+                        <li><a href="#"><span>FILM</span><text>FILM</text></a></li>
+                        <li><a href="#"><span>COMMERCIAL</span><text>COMMERCIAL</text></a></li>
+                        <li><a href="#"><span>ABOUT</span><text>ABOUT</text></a></li>
+                        <li><a href="#"><span>UA</span><text>UA</text></a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" target="_blank">FACEBOOK</a>
+                        <a href="#" target="_blank">VIMEO</a>
+                    </div>
+                </div>
+                <span class="pagename"></span>
+                <div class="menu__icon">
+                    <img class="openmenu" src="img/burger.svg" alt="menu">
+                    <img class="closemenu" src="img/close.svg" alt="menu">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="film-carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                        <div class="swwrap mainslide-bg">
+                            <div class="mainslide-videowrap">
+                                <video id="" class="" playsinline  autoplay muted>
+                                    <source src="video/video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <div class="swwrap mainslide-bg">
+                            <div class="mainslide-videowrap" style="height: 300px;">
+                                <video id="" class="" playsinline  autoplay muted>
+                                    <source src="video/video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+               
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/plyr.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!-- Slider initial -->
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            slidesPerView: 1,
+            mousewheel: false,
+            loop: true,
+            speed: 500,
+            autoplay: {
+                delay: 9000,
+                disableOnInteraction: false,
+            },
+           
+        });
+    </script>
+    <!-- Slider end -->
+</body>
+
+</html>

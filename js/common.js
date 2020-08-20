@@ -25,12 +25,10 @@ $(document).ready(function () {
     // player
     if($('*').is('.js-player')) {
         const players = Plyr.setup('.js-player', {
-            title: 'Example Title',
         });
     }
     if($('*').is('.plyr__video-embed')) {
         const players = Plyr.setup('.plyr__video-embed', {
-            title: 'Example Title',
         });
     }
 
@@ -45,4 +43,14 @@ $(document).ready(function () {
         $('.commerc-modalwrap').addClass('show');
     });
 
+    // main player
+    // if($('*').is('.js-playermain')) {
+        const player = Plyr.setup('.js-playermain', {
+            // debug: true,
+            // volume: 0,
+            // autoplay: true
+            
+        });
+        
+    // }
 });
