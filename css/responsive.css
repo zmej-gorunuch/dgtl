@@ -336,6 +336,38 @@
 
 
 
+    .film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap.bigvideo video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: 50% 50%;
+        max-width: auto;
+        max-height: auto;
+    }
+
+    .film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap.littlevideo video {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: 50% 50%;
+        max-width: auto;
+        max-height: auto;
+    }
+
+    .main-soc {
+        display: none;
+    }
+
+    .main-author {
+        right: 0;
+        bottom: 22px;
+        left: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
     .film-carousel .swiper-container-vertical>.swiper-pagination-bullets,
     .film-carousel .swiper-button-next:after,
     .film-carousel .swiper-button-prev:after {
@@ -374,7 +406,8 @@
         height: 230px;
     }
 
-    .teambox__descr .teambox__name, .teambox__descr .teambox__prof {
+    .teambox__descr .teambox__name,
+    .teambox__descr .teambox__prof {
         font-size: 26px;
         line-height: 32px;
     }

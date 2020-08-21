@@ -43,33 +43,48 @@
     </header>
     <main>
         <div class="film-carousel">
-            <div class="swiper-container">
+            <div class="swiper-container slide-clicker">
                 <div class="swiper-wrapper">
-                    <!-- <div class="swiper-slide">
-                        <div class="swwrap mainslide-bg">
-                            <div class="mainslide-videowrap">
-                                <video id="" class="" playsinline  autoplay muted>
-                                    <source src="video/video.mp4" type="video/mp4" />
-                                </video>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="swiper-slide">
                         <div class="swwrap mainslide-bg">
-                            <div class="mainslide-videowrap" style="height: 300px;">
-                                <video id="" class="" playsinline  autoplay muted>
+                            <div class="mainslide-videowrap bigvideo">
+                                <video id="" class="" playsinline muted autoplay>
                                     <source src="video/video.mp4" type="video/mp4" />
                                 </video>
                             </div>
                         </div>
                     </div>
-                  
+                    <div class="swiper-slide">
+                        <div class="swwrap mainslide-bg">
+                            <div class="mainslide-videowrap littlevideo">
+                                <video id="" class="" playsinline muted autoplay>
+                                    <source src="video/video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swwrap mainslide-bg">
+                            <div class="mainslide-videowrap littlevideo">
+                                <video id="" class="" playsinline muted autoplay style="width: 50%; height: auto;">
+                                    <source src="video/video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-               
+
             </div>
 
-
+            <ul class="main-soc inline-list">
+                <li><a class="hovundeline" href="#" target="_blank">FACEBOOK</a></li>
+                <li><a class="hovundeline" href="#" target="_blank">VIMEO</a></li>
+            </ul>
+            <a href="#" class="main-author hovundeline">ANATOLII DAVIDENKO</a>
         </div>
+
+
     </main>
 
     <script src="js/jquery.min.js"></script>
@@ -80,19 +95,67 @@
     <!-- Slider initial -->
 
     <script>
+
+        var sliderEndEvents = document.querySelectorAll('.slide-clicker video');
+
         var swiper = new Swiper('.swiper-container', {
             effect: 'fade',
             slidesPerView: 1,
             mousewheel: false,
-            loop: true,
+            // loop: true,
+            runCallbacksOnInit: false,
             simulateTouch: false,
             speed: 500,
-            autoplay: {
-                delay: 9000,
-                disableOnInteraction: false,
-            },
-           
+            // autoplay: {
+            //     delay: 9000,
+            //     disableOnInteraction: false,
+            // },
+
         });
+
+        function slideChange() {
+            if (swiper) {
+                if (sliderEndEvents.length - 1 == swiper.realIndex) {
+                    swiper.slideTo(0);
+                } else {
+                    swiper.slideNext();
+                }
+                var pr = false;
+                var selEl = false;
+                sliderEndEvents.forEach(function (el) {
+                    if (sliderEndEvents[swiper.realIndex] == el) {
+                        selEl = el;
+                    } else {
+                        el.currentTime = 0;
+                        pr = el.pause();
+                    }
+                });
+
+                if (pr) {
+                    pr.then(function () {
+                        selEl.currentTime = 0;
+                        selEl.play();
+                    });
+                } else {
+                    selEl.currentTime = 0;
+                    selEl.play();
+                }
+            }
+        }
+
+        var sliderClick = document.querySelector('.slide-clicker');
+        sliderClick.addEventListener('click', function (e) {
+            slideChange()
+        });
+
+        sliderEndEvents.forEach(function (el) {
+            el.addEventListener('ended', function (e) {
+                slideChange()
+            });
+        });
+
+        if (sliderEndEvents[0]) sliderEndEvents[0].play();
+
     </script>
     <!-- Slider end -->
 </body>

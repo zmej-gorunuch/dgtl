@@ -23,34 +23,35 @@ $(document).ready(function () {
 
 
     // player
-    if($('*').is('.js-player')) {
+    if ($('*').is('.js-player')) {
         const players = Plyr.setup('.js-player', {
         });
     }
-    if($('*').is('.plyr__video-embed')) {
+    if ($('*').is('.plyr__video-embed')) {
         const players = Plyr.setup('.plyr__video-embed', {
         });
     }
 
     // COmmercial modal
-    $('.closemodal').click(function(){
+    $('.closemodal').click(function () {
         // $('.commerc-modalwrap').hide();
         $('.commerc-modalwrap').removeClass('show');
+        document.querySelector('.js-player').pause();
     });
-    
-    $('.commercslider .swwrap').click(function() {
+
+    $('.commercslider .swwrap').click(function () {
         // $('.commerc-modalwrap').show();
         $('.commerc-modalwrap').addClass('show');
     });
 
     // main player
     // if($('*').is('.js-playermain')) {
-        const player = Plyr.setup('.js-playermain', {
-            // debug: true,
-            // volume: 0,
-            // autoplay: true
-            
-        });
-        
+    const player = Plyr.setup('.js-playermain', {
+        // debug: true,
+        // volume: 0,
+        // autoplay: true
+
+    });
+
     // }
 });
