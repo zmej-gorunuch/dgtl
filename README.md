@@ -1,3 +1,3 @@
 # DGTL RLGN
 
-Demo: https://zmej-gorunuch.github.io/dgtl/
+Demo: https://zmej-gorunuch.github.io/dgtl/sitemap.html
