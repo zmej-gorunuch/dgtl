@@ -39,9 +39,7 @@
     .film-carousel .swiper-button-prev {
         display: inline-block;
     }
-    header {
-        z-index: 9;
-    }
+
     header .logo img {
         width: 156px;
     }
@@ -121,7 +119,7 @@
 
     header .logo,
     .menu__icon {
-        z-index: 12;
+        z-index: 3;
     }
 
     .mobwrap-menu {
@@ -133,7 +131,7 @@
         max-width: 100%;
         top: 0;
         background: rgba(0, 0, 0, 0.8);
-        z-index: 11;
+        z-index: 2;
         align-items: center;
         justify-content: center;
         transition: .5s;
@@ -387,19 +385,6 @@
         -moz-column-gap: 0;
         column-gap: 0;
      
-    }
-
-
-
-
-    /* --- */
-    .menu-wrapper {
-        position: relative;
-        z-index: 11;
-    }
-
-    .header__menu {
-        overflow: initial;
     }
 }
 
