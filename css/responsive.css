@@ -40,7 +40,7 @@
         display: inline-block;
     }
     header {
-        z-index: 99;
+        z-index: 9;
     }
     header .logo img {
         width: 156px;
@@ -387,6 +387,19 @@
         -moz-column-gap: 0;
         column-gap: 0;
      
+    }
+
+
+
+
+    /* --- */
+    .menu-wrapper {
+        position: relative;
+        z-index: 11;
+    }
+
+    .header__menu {
+        overflow: initial;
     }
 }
 
