@@ -386,6 +386,10 @@
         column-gap: 0;
      
     }
+
+    .header__menu {
+        overflow: initial;
+    }
 }
 
 @media(max-width:420.8px) {
