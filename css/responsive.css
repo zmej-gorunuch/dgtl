@@ -39,7 +39,9 @@
     .film-carousel .swiper-button-prev {
         display: inline-block;
     }
-
+    header {
+        z-index: 99;
+    }
     header .logo img {
         width: 156px;
     }
@@ -119,7 +121,7 @@
 
     header .logo,
     .menu__icon {
-        z-index: 3;
+        z-index: 12;
     }
 
     .mobwrap-menu {
@@ -131,7 +133,7 @@
         max-width: 100%;
         top: 0;
         background: rgba(0, 0, 0, 0.8);
-        z-index: 2;
+        z-index: 11;
         align-items: center;
         justify-content: center;
         transition: .5s;
