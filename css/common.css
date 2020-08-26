@@ -812,7 +812,8 @@ header .social {
 }
 
 .swwrap.mainslide-bg {
-    background: conic-gradient(from 200.81deg at 36.02% 50%, #D56B6B 0deg, #D8D8AA 217.5deg, #D56B6B 360deg);
+    /* background: conic-gradient(from 200.81deg at 36.02% 50%, #D56B6B 0deg, #D8D8AA 217.5deg, #D56B6B 360deg); */
+    background: linear-gradient(45deg, #d56b6b, #d8d8aa);
 }
 
 .film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap {
