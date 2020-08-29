@@ -626,7 +626,7 @@ header .social {
 .plyr audio,
 .plyr iframe,
 .plyr video {
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 /* ABOUT PAGE */
