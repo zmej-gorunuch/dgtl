@@ -878,3 +878,7 @@ header .social {
     padding: 10px;
     box-sizing: content-box;
 }
+
+.film-carousel {
+    position: relative;
+}
