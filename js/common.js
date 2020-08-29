@@ -37,13 +37,13 @@ $(document).ready(function () {
 
 
     // COmmercial modal
-    $('.closemodal').click(function () {
-        $('.commerc-modalwrap').removeClass('show');
-        document.querySelector('.js-player').pause();
-    });
-
     $('.commercslider .swwrap').click(function () {
         $('.commerc-modalwrap').addClass('show');
+    });
+    $('.closemodal').click(function () {
+        $('.commerc-modalwrap').removeClass('show');
+        players[0].stop();
+        
     });
 
     // main player
