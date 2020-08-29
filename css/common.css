@@ -141,7 +141,7 @@ header .logo:hover .logo-white {
 
 .header__menu {
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 50px;
     z-index: 2;
     display: flex;
@@ -872,4 +872,9 @@ header .social {
     max-width: 80%;
     width: 100%;
     max-height: 100vh;
+}
+
+.menu__icon {
+    padding: 10px;
+    box-sizing: content-box;
 }
