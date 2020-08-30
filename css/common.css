@@ -882,3 +882,7 @@ header .social {
 .film-carousel {
     position: relative;
 }
+
+body.overhid {
+    overflow: hidden;
+}

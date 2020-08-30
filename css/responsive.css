@@ -162,8 +162,8 @@
     }
 
     .header__menu ul {
-        height: calc(100vh - 220px);
-        max-height: 350px;
+        height: calc(100vh - 300px);
+        max-height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -172,6 +172,7 @@
         -moz-transition: none;
         -ms-transition: none;
         -o-transition: none;
+        top: -20px;
     }
 
     .header__menu ul li {
@@ -200,7 +201,7 @@
         width: 100%;
         position: absolute;
         left: 0;
-        bottom: 26px;
+        bottom: 100px;
         text-align: center;
     }
 
@@ -493,7 +494,7 @@
     }
 
     header .social {
-        bottom: 22px;
+        bottom: 50px;
     }
 
     .commod__videowrap {

@@ -4,12 +4,14 @@ $(document).ready(function () {
         $('.menu__icon .closemenu').show();
         $('.header__menu ul').addClass('show');
         $('.header__menu > span').addClass('hide');
+        $('body').addClass('overhid');
     });
     $('.menu__icon .closemenu').click(function () {
         $(this).hide();
         $('.menu__icon .openmenu').show();
         $('.header__menu ul').removeClass('show');
         $('.header__menu > span').removeClass('hide');
+        $('body').removeClass('overhid');
     });
 
     if ($(window).width() < 768) {
