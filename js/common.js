@@ -24,13 +24,7 @@ $(document).ready(function () {
     }
 
 
-    // player
-
-
-    const players = Plyr.setup('.js-player', {
-        hideControls: true,
-    });
-
+    
 
 
 
@@ -44,7 +38,11 @@ $(document).ready(function () {
     });
     $('.closemodal').click(function () {
         $('.commerc-modalwrap').removeClass('show');
-        players[0].stop();
+        
+
+        var div = document.getElementById("commod");
+        var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+        iframe.postMessage('{"method":"pause"}', '*');
         
     });
 
