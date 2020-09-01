@@ -890,3 +890,8 @@ body.overhid {
     z-index: 2;
     position: relative;
 }
+
+.swwrap.mainslide-bg {
+    background: linear-gradient(#D56B6B, #D8D8AA);
+}
+
