@@ -623,12 +623,6 @@ header .social {
     height: 20px;
 }
 
-.plyr audio,
-.plyr iframe,
-.plyr video {
-    /* max-height: 100vh; */
-}
-
 /* ABOUT PAGE */
 
 .about-slider {
@@ -811,10 +805,6 @@ header .social {
     text-decoration: none;
 }
 
-.swwrap.mainslide-bg {
-    /* background: conic-gradient(from 200.81deg at 36.02% 50%, #D56B6B 0deg, #D8D8AA 217.5deg, #D56B6B 360deg); */
-    background: linear-gradient(45deg, #d56b6b, #d8d8aa);
-}
 
 .film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap {
     width: 100%;
@@ -885,4 +875,18 @@ header .social {
 
 body.overhid {
     overflow: hidden;
+}
+
+.slide-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.film-carousel .swiper-slide .swwrap.mainslide-bg .mainslide-videowrap {
+    z-index: 2;
+    position: relative;
 }
