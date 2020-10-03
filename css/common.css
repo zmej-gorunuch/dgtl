@@ -836,7 +836,7 @@ header .social {
 }
 
 .teamlist {
-    -webkit-column-width: 200px;
+    /* -webkit-column-width: 200px;
     -moz-column-width: 200px;
     column-width: 200px;
     -webkit-column-count: 2;
@@ -844,7 +844,7 @@ header .social {
     column-count: 2;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
-    column-gap: 30px;
+    column-gap: 30px; */
  
 }
 
@@ -895,3 +895,15 @@ body.overhid {
     background: linear-gradient(#D56B6B, #D8D8AA);
 }
 
+/* preloader    */
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

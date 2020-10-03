@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="img/preloader1.gif" alt="gif">
+    </div>
+
+
     <header>
         <a href="#" class="logo">
             <img class="logo-general" src="img/logo.svg" alt="logo">
@@ -162,6 +167,12 @@
 
     </script>
     <!-- Slider end -->
+
+    <script>
+        $(function(){
+            $(".preloader").delay(2000).fadeOut(500);
+        });
+    </script>
 </body>
 
 </html>

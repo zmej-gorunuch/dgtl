@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
 
-    
+
 
 
 
@@ -38,14 +38,29 @@ $(document).ready(function () {
     });
     $('.closemodal').click(function () {
         $('.commerc-modalwrap').removeClass('show');
-        
+
 
         var div = document.getElementById("commod");
         var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
         iframe.postMessage('{"method":"pause"}', '*');
-        
+
     });
 
-    // main player
-   
+
+    // $(".commerc-modal")
+    $('.commerc-modal').on('click', function (event) {
+        if (!$(event.target).is('.commerc-modal *')) {
+            $('.commerc-modalwrap').removeClass('show');
+
+            var div = document.getElementById("commod");
+            var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+            iframe.postMessage('{"method":"pause"}', '*');
+        }
+    });
+
+
+
+
+
+
 });
