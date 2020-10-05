@@ -936,7 +936,7 @@ body.overhid {
     object-position: 50% 50%;
 }
 
-/* 
+
 .filmsslider .slick-slide .slide__info .theme {
     opacity: 0;
     transform: translateY(100px);
@@ -983,7 +983,7 @@ body.overhid {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
-} */
+}
 
 .swiper-button-prev, .swiper-button-next {
     position: absolute;
