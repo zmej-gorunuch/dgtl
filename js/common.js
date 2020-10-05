@@ -101,10 +101,10 @@ $(document).ready(function () {
             const $slider = event.data.$slider
             const delta = event.originalEvent.deltaY
             if(delta > 0) {
-                $slider.slick('slickPrev')
+                $slider.slick('slickNext')
             }
             else {
-                $slider.slick('slickNext')
+                $slider.slick('slickPrev')
             }
         }
 
