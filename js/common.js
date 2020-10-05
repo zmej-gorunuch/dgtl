@@ -60,7 +60,53 @@ $(document).ready(function () {
 
 
 
+    // NEW 
+    if($('*').is('.filmsslider')) {
+        const slider = $(".filmsslider");
+        slider
+        .slick({
+            infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                vertical: true,
+                pauseOnHover: false,
+                arrows: false,
+                verticalSwiping: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 9000,
+                dots: true,
+                responsive: [
+                    {
+                      breakpoint: 767,
+                      settings: {
+                        dots: false,
+                        arrows: true,
+                        nextArrow: '<button type="button" class="swiper-button-next"></button>',
+                        prevArrow: '<button type="button" class="swiper-button-prev"></button>',
+                      }
+                    }
+                    
+                  ]
+        });
+
+        slider.on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickNext');
+        } else {
+            $(this).slick('slickPrev');
+        }
+        }));
+
+        
 
 
+
+
+
+        
+    }
 
 });

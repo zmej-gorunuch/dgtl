@@ -501,3 +501,15 @@
         max-width: 80%;
     }
 }
+
+
+
+/* NEW */
+@media(max-width:767.8px) {
+    .film-carousel .swiper-button-next, .film-carousel .swiper-button-prev {
+        padding: 10px;
+        box-sizing: content-box;
+        background-size: 30px;
+        outline: none;
+    }
+}
