@@ -90,7 +90,7 @@ $(document).ready(function () {
                   ]
         });
         
-        const sliderItem = $(".slider-item");
+        const sliderItem = $(".slick-slide");
         sliderItem.on('wheel', (function(e) {
         e.preventDefault();
 
