@@ -1034,3 +1034,7 @@ body.overhid {
 .slick-dots .slick-active button {
     background-color: #fff;
 }
+
+.swiper-wrapper {
+    transition-timing-function: linear;
+  }
