@@ -89,8 +89,9 @@ $(document).ready(function () {
                     
                   ]
         });
-
-        slider.on('wheel', (function(e) {
+        
+        const sliderItem = $(".slider-item");
+        sliderItem.on('wheel', (function(e) {
         e.preventDefault();
 
         if (e.originalEvent.deltaY < 0) {
