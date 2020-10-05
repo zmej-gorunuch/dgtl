@@ -62,10 +62,14 @@ $(document).ready(function () {
 
     // NEW 
     if($('*').is('.filmsslider')) {
-        const slider = $(".filmsslider");
-        slider
-        .slick({
-            infinite: true,
+        
+        const $slider = $("#slider");
+        $slider
+            .on('init', () => {
+                mouseWheel($slider)
+            })
+            .slick({
+                infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 vertical: true,
@@ -88,25 +92,38 @@ $(document).ready(function () {
                     }
                     
                   ]
-        });
-
-        slider.on('wheel', (function(e) {
-        e.preventDefault();
-
-        if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-        } else {
-            $(this).slick('slickNext');
+            })
+        function mouseWheel($slider) {
+            $(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
         }
-        }));
-
-        
-
+        function mouseWheelHandler(event) {
+            event.preventDefault()
+            const $slider = event.data.$slider
+            const delta = event.originalEvent.deltaY
+            if(delta > 0) {
+                $slider.slick('slickPrev')
+            }
+            else {
+                $slider.slick('slickNext')
+            }
+        }
 
 
 
 
         
     }
+
+
+
+
+
+
+
+
+
+
+    
+
 
 });
