@@ -89,9 +89,8 @@ $(document).ready(function () {
                     
                   ]
         });
-        
-        const sliderItem = $(".slick-slide");
-        sliderItem.on('wheel', (function(e) {
+
+        slider.on('wheel', (function(e) {
         e.preventDefault();
 
         if (e.originalEvent.deltaY < 0) {
